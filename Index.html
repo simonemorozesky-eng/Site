@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Simples - Simone</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    .titulo{
+      width: 100%;
+    }
+    #olhe{
+      margin-top: 20px;
+    }
+    .cidade img{
+      margin-top: 20px;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .contato{
+      background-color: rgba(210, 180, 140, 0.5);
+      padding: 30px;
+      text-align: right;
+    }
+    .contato a {
+      color: white;
+      text-decoration: none;
+      margin: right;
+    }
+    footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    }
+  nav {
+    margin-top: 20px;
+   background-color: white;
+  border: 0.5px;
+  padding: 10px;
+}
+  nav a {
+    color: Teal;
+    text-decoration: none;   /* tira o sublinhado */
+    margin: 0 25px;          /* espaçamento entre os itens */
+    font-weight: bold;
+  }
+  nav a:hover {
+    color: black;            /* cor ao passar o mouse */
+  }
+  section {
+    padding: 80px 20px; /* espaço para não ficar escondido atrás do menu */
+    min-height: 100vh;
+    .foto img{
+      margin-top: 20px;
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      display: flex;
+    }
+    .foto{
+  display: flex;
+  justify-content: center;  /* centraliza as imagens */
+  flex-wrap: wrap;          /* permite que quebrem de linha se faltar espaço */
+  gap: 10px;                /* espaço entre as imagens */
+  max-width: 100%;          /* impede que ultrapasse a tela */
+  overflow: hidden;
+}
+
+.foto img {
+  width: 30%;               /* cada imagem ocupa 30% da largura da tela */
+  height: auto;             /* mantém a proporção original */
+  border-radius: 5px;       /* opcional */
+  object-fit: cover;        /* deixa bonito mesmo cortando */
+}
+.foto{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.foto img {
+  width: 30%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.foto img.grande{
+  width: 80%;
+}
+.img{
+  width: 40%;
+}
+.im{
+  width: 50%;
+}
+.ita{
+  width: 70%;
+}
+</style>
+<body>
+  <header>
+    <img src="Titulo.png" alt="figura" class="titulo">
+  </header>
+  <nav>
+  <a href="#olhe">Olhe</a>
+  <a href="#veja">Veja</a>
+  <a href="#descubra">Descubra</a>
+  </nav>
+  <div class="cidade">
+    <img src="Cassia.jpg" alt="imagem">
+  </div>
+<section id="olhe">
+  <h2 class="titu">Venha Conhecer</h2>
+  <p>
+     
+    <img src="Ita.png" alt="imagem" class="ita"></br>Localizado na Região Serrana do Estado do Espirito Santo, conta com hotéis, restaurantes e comidas típicas.
+   As principais atrações turísticas são a Igreja Católica, construída em estilo neogótico, e a Pedra Paulista.<br>
+    Povo acolhedor, a cidade realiza muitos eventos culturais, como a FITAC, no mês de Setembro.
+    Voce irá se encantar com a nossa hospitalidade.</p>
+  </p>
+</section>
+
+<section id="veja">
+  <h2>Fotos</h2>
+  <div class="foto">
+    <img src="C.jpg" alt="foto 1" onclick="this.classList.toggle('grande')">
+    <img src="B.jpg" alt="foto 2" onclick="this.classList.toggle('grande')">
+    <img src="A.jpg" alt="foto 3" onclick="this.classList.toggle('grande')">
+</div>
+  </div>
+</section>
+
+<section id="descubra">
+  <h2>Muito mais que um lugar!</h2>
+  <p>
+    <img src="Pa.png" alt="imagem" class="im"</br> Você já pensou em escalar uma pedra apenas para sentir a emoção de se chegar ao topo! E de cara, ter uma vista linda?<br>
+    <img src="Pe.png" alt="imagem" class="img">
+    Em Itaimbé, distrito local, ha voos razantes na modalidade, uma região ampla , agradável e relaxante<br>
+  <img src="F.png" alt="imagem" class="im">
+   Festa Cultural que acontece em Setembro. Todo o municipio se reúne no evento. Escolas, comércio, a populacão em geral.<br>É uma das festas mais aguardadas pelos itaguaçuenses. Muita animaçao, comidas tipicas e danças folclóricas. Iclusive shows de bandas da região.
+  </p>
+</section>
+  <footer>
+    <div class="contato">
+    <a href="Index2.html">Sobre Mim</a><br><br>
+     <a href="Index1.html">Contato</a>
+    </div>
+  </footer>
+</body>
+</html> 
