@@ -96,9 +96,23 @@
 .foto img.grande{
   width: 80%;
 }
-    .praca.ativo::after{
-      content="Praça Dr. Demócrates Frizzera Coelho"
-    }
+    .praca {
+  position: relative;
+  width: 250px;
+}
+
+.praca.ativo::after {
+  content: "Praça Dr. Democrates Fizzera Coelho";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+    
       
 .img{
   width: 40%;
